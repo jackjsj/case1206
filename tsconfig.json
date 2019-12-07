@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitAny": true,
+    "removeComments": false,
+    "locale": "zh-CN",
+    "target": "es5"
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/ts/*.ts"]
+}
