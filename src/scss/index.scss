@@ -1,6 +1,172 @@
 @import './normalize.scss';
 @import './utils.scss';
 
-html,body{
-  height:100%;
+html {
+  font-size: 10vw;
+}
+body {
+  min-height: 100vh;
+  background: #ffede1;
+  font-size: 12px;
+}
+@font-face {
+  font-family: 'mf';
+  src: url(../font/WenYue-XinQingNianTi-W8.otf);
+}
+@font-face {
+  font-family: 'sh-b';
+  src: url(../font/SourceHanSansCN-Bold.otf);
+}
+@font-face {
+  font-family: 'sh-m';
+  src: url(../font/SourceHanSansCN-Medium.otf);
+}
+.draw-task {
+  .bg {
+    // padding-top: 233px;
+    background: url(../images/背景图.png);
+    background-size: cover;
+    height: 545.5px;
+    box-sizing: border-box;
+    overflow:hidden;
+    & > div {
+      top: 233px;
+    }
+  }
+  .lh1 {
+    line-height: 1;
+  }
+  .mc-red {
+    color: #f95555;
+  }
+  .mc-dark-red {
+    color: #c04061;
+  }
+  .mf {
+    font-family: 'mf';
+  }
+  .sh-b {
+    font-family: 'sh-b';
+  }
+  .mb12 {
+    margin-bottom: 12px;
+  }
+  .red-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #fc5867;
+    border-radius: 3px;
+    margin-right: 8px;
+  }
+  .draw-btn {
+    width: 174px;
+    height: 43px;
+    background-image: linear-gradient(180deg, #ffd0cf 0%, #de596f 100%),
+      linear-gradient(#f899a4, #f899a4);
+    background-blend-mode: normal, normal;
+    border-radius: 21px;
+    outline: none;
+    font-size: 20px;
+    color: #dc171e;
+    border: none;
+    font-family: 'sh-m';
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  .btn-wrapper {
+    width: 186px;
+    height: 53px;
+    background-image: linear-gradient(180deg, #fb9092 0%, #d02542 100%),
+      linear-gradient(#dd5668, #dd5668);
+    background-blend-mode: normal, normal;
+    border-radius: 25px;
+  }
+  .bingo {
+    margin-top: -38px;
+  }
+  .task {
+    width: 242px;
+    height: 39px;
+    background-color: #ffede1;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 14px;
+    margin: auto;
+    margin-top: 22px;
+    margin-bottom: 12px;
+  }
+  .mc-light-red {
+    color: red;
+  }
+  .c4d {
+    color: #4d4d4d;
+  }
+  .mc-orange {
+    color: #ff9000;
+  }
+  .mb50 {
+    margin-bottom: 50px;
+  }
+  .mb8 {
+    margin-bottom: 8px;
+  }
+  .mb82 {
+    margin-bottom: 82px;
+  }
+  .change-btn {
+    width: 103px;
+    height: 36px;
+    background: url(../images/换一换按钮.png);
+    background-size: cover;
+    outline: none;
+    border: none;
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  .bottom {
+    margin-top: -45px;
+  }
+  .mt25 {
+    margin-top: 20px;
+  }
+  .mb32 {
+    margin-bottom: 32px;
+  }
+  .mr36 {
+    margin-right: 36px;
+  }
+  .underline {
+    color: #0072ff;
+    text-decoration-line: underline;
+    &:visited {
+      color: #0072ff;
+    }
+  }
+  .history-task-item {
+    width: 330px;
+    height: 39px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 14px 9px;
+    margin: auto;
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+  .popup {
+    width: 292px;
+    height: 191px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 51px 0 19px 0;
+  }
+  .lh28 {
+    line-height: 28px;
+  }
+  .mc-blue {
+    color: #139bf2;
+  }
 }
